@@ -6,7 +6,7 @@ Python Packages:
 
 I upgraded to pip3 and installed these packages
 
-Pyside6:  https://pypi.org/project/PySide6/ \n
+Pyside6:  https://pypi.org/project/PySide6/ </br>
 re:       Regular expressions
 bs4:      https://pypi.org/project/beautifulsoup4/
 pyodbc    https://pypi.org/project/pyodbc/
