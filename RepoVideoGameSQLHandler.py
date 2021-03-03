@@ -14,7 +14,7 @@ class SqlHandler():
         self.username = '*********'
         self.password = '*********'
 
-        self.CONNECTION_STRING = 'DRIVER=' + self.driver + ';SERVER=DESKTOP-44L2L6T\VIDEOGAMES_SQL;DATABASE=' + self.database + ';UID=' + self.username + ';PWD=' + self.password + ';'
+        self.CONNECTION_STRING = 'DRIVER=' + self.driver + ';SERVER=' + self.server + ';DATABASE=' + self.database + ';UID=' + self.username + ';PWD=' + self.password + ';'
 
         self.conn = pyodbc.connect(self.CONNECTION_STRING)
         self.conn.autocommit = True
