@@ -19,6 +19,7 @@ Installed SQL Server Management Studio
 After installing SSMS, Create a database named VideoGames
 
 In the RepoVideoGamesSQLHandler.py file the stars will have to be replaced with your local database info
+You should have this information from setting up SQL Server and SSMS.
 
 class SqlHandler():
     def __init__(self):
