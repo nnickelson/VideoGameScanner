@@ -6,12 +6,10 @@ from PySide6.QtWidgets import (QMainWindow, QStackedLayout, QWidget, QPushButton
                              QApplication, QGridLayout, QVBoxLayout, QSizePolicy, QLabel, QHBoxLayout )
 
 from BarcodeScannerInputTable import *
-#from FlashyBoxWithButton import *
 from GamePriceTableView import *
 from BarcodeInfo import Barcode
 import MainPageInfoHandler as mp
 from VideoGameSqlHandler import *
-from RepoVideoGamesSQLHandler import *
 
 
 class MainWindow(QMainWindow):

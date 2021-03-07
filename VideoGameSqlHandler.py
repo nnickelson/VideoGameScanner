@@ -4,17 +4,14 @@ from datetime import date
 from MainPageInfoHandler import convertPriceToDecimal as cpd
 from DatabaseCreation import CreateSQLTables as cst
 from DatabaseCreation import CreateSQLStoredProcs as cssp
+from DatabaseCreation import MySQLConnection as msc 
+from DatabaseCreation import SQLConnection as sqlc
 
 class SqlHandler():
     def __init__(self):
 
-        self.driver = '********'
-        self.server = '********'
-        self.database = '*********'
-        self.username = '*********'
-        self.password = '*********'
-
-        self.CONNECTION_STRING = 'DRIVER=' + self.driver + ';SERVER=' + self.server + ';DATABASE=' + self.database + ';UID=' + self.username + ';PWD=' + self.password + ';'
+        self.CONNECTION_STRING = msc.connectionString()
+        #self.CONNECTION_STRING = sqlc.connectionString()
 
         self.conn = pyodbc.connect(self.CONNECTION_STRING)
         self.conn.autocommit = True
@@ -69,3 +66,7 @@ class SqlHandler():
         cssp.createInsertCollectedGamesProc(self)
         cssp.createInsertDefaultPricingOnDatesProc(self)
         cssp.createInsertPurchaseTransactionsProc(self)
+
+    
+
+
