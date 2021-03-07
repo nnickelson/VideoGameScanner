@@ -1,4 +1,4 @@
 /.vscode
 /vgs
-/MySQLConnection.py
+DatabaseCreation/MySQLConnection.py
 /__pycache__

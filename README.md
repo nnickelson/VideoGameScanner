@@ -21,13 +21,18 @@ After installing SSMS, Create a database named VideoGames
 In the RepoVideoGamesSQLHandler.py file the stars will have to be replaced with your local database info. </br>
 You should have this information from setting up SQL Server and SSMS.
 
-class SqlHandler():
-    def __init__(self):
+DatabaseCreation Folder\SQLConnection.py  has got the connection information that needs to be filled out
+    
+#Fill in information from setting up SQL Server
+def connectionString():
 
-        self.driver = '********'
-        self.server = '********'
-        self.database = '*********'
-        self.username = '*********'
-        self.password = '*********'
+    driver = '********'
+    server = '********'
+    database = '*********'
+    username = '*********'
+    password = '*********'
 
+    CONNECTION_STRING = 'DRIVER=' + driver + ';SERVER=' + server + ';DATABASE=' + database + ';UID=' + username + ';PWD=' + password + ';'
+
+    return CONNECTION_STRING
 
