@@ -1,4 +1,4 @@
 /.vscode
 /vgs
-/VideoGameSqlHandler.py
+/MySQLConnection.py
 /__pycache__
