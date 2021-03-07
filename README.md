@@ -23,7 +23,8 @@ You should have this information from setting up SQL Server and SSMS.
 
 DatabaseCreation Folder\SQLConnection.py  has got the connection information that needs to be filled out
     
-#Fill in information from setting up SQL Server
+#Fill in information from setting up SQL Server</br>
+
 def connectionString():
 
     driver = '********'
