@@ -186,8 +186,10 @@ class MainWindow(QMainWindow):
         self.label2.setAlignment(QtCore.Qt.AlignCenter)
         self.buttonLayout.addWidget(self.label2, 1,2,1,1)
 
-        self.buttonBadinfo = QPushButton('Bad Info', self)
-        self.buttonLayout.addWidget(self.buttonBadinfo, 2,0,1,1)
+        self.orderNumber = QLineEdit('Bad Info', self)
+        self.buttonLayout.addWidget(self.orderNumber, 2,0,1,1)
+        self.orderNumber.setSizePolicy(QSizePolicy.Preferred, QSizePolicy.Fixed)
+        self.orderNumber.setAlignment(QtCore.Qt.AlignCenter)
 
         self.bulkPrice = QLineEdit()
         self.buttonLayout.addWidget(self.bulkPrice, 2,1,1,1)
@@ -199,7 +201,7 @@ class MainWindow(QMainWindow):
         self.singleAltPrice.setSizePolicy(QSizePolicy.Preferred, QSizePolicy.Fixed)
         self.singleAltPrice.setAlignment(QtCore.Qt.AlignCenter)
 
-        self.bulkPriceCheckbox = QCheckBox('Bulk Price Enabled')
+        self.bulkPriceCheckbox = QCheckBox('Order Number')
         self.buttonLayout.addWidget(self.bulkPriceCheckbox, 1,0)
         #-------------------------------------------------------------
         
